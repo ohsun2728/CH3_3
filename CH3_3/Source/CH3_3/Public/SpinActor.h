@@ -13,13 +13,13 @@ public:
 	ASpinActor();
 
 protected:
-	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category="SpinActor|Components")
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "SpinActor|Components")
 	USceneComponent* SceneRoot;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "SpinActor|Components")
 	UStaticMeshComponent* StaticMeshComp;
 	
-	UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, Category="SpinActor|Components")
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "SpinActor|Components")
 	float RotationSpeed;	// 회전 속도를 나타내는 변수
 
 	virtual void BeginPlay() override;

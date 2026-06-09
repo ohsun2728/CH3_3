@@ -61,7 +61,7 @@ struct Z_Construct_UClass_ASpinActor_Statics
 };
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_ASpinActor_Statics::NewProp_SceneRoot = { "SceneRoot", nullptr, (EPropertyFlags)0x00200800000a001d, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ASpinActor, SceneRoot), Z_Construct_UClass_USceneComponent_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_SceneRoot_MetaData), NewProp_SceneRoot_MetaData) };
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_ASpinActor_Statics::NewProp_StaticMeshComp = { "StaticMeshComp", nullptr, (EPropertyFlags)0x002008000008000d, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ASpinActor, StaticMeshComp), Z_Construct_UClass_UStaticMeshComponent_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_StaticMeshComp_MetaData), NewProp_StaticMeshComp_MetaData) };
-const UECodeGen_Private::FFloatPropertyParams Z_Construct_UClass_ASpinActor_Statics::NewProp_RotationSpeed = { "RotationSpeed", nullptr, (EPropertyFlags)0x0020080000010015, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ASpinActor, RotationSpeed), METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_RotationSpeed_MetaData), NewProp_RotationSpeed_MetaData) };
+const UECodeGen_Private::FFloatPropertyParams Z_Construct_UClass_ASpinActor_Statics::NewProp_RotationSpeed = { "RotationSpeed", nullptr, (EPropertyFlags)0x0020080000000005, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ASpinActor, RotationSpeed), METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_RotationSpeed_MetaData), NewProp_RotationSpeed_MetaData) };
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_ASpinActor_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ASpinActor_Statics::NewProp_SceneRoot,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ASpinActor_Statics::NewProp_StaticMeshComp,
@@ -108,10 +108,10 @@ ASpinActor::~ASpinActor() {}
 struct Z_CompiledInDeferFile_FID_Unreal_Project_CH3_3_CH3_3_Source_CH3_3_Public_SpinActor_h_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_ASpinActor, ASpinActor::StaticClass, TEXT("ASpinActor"), &Z_Registration_Info_UClass_ASpinActor, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(ASpinActor), 2469909369U) },
+		{ Z_Construct_UClass_ASpinActor, ASpinActor::StaticClass, TEXT("ASpinActor"), &Z_Registration_Info_UClass_ASpinActor, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(ASpinActor), 1139107240U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Unreal_Project_CH3_3_CH3_3_Source_CH3_3_Public_SpinActor_h_3653759893(TEXT("/Script/CH3_3"),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Unreal_Project_CH3_3_CH3_3_Source_CH3_3_Public_SpinActor_h_3310671816(TEXT("/Script/CH3_3"),
 	Z_CompiledInDeferFile_FID_Unreal_Project_CH3_3_CH3_3_Source_CH3_3_Public_SpinActor_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Unreal_Project_CH3_3_CH3_3_Source_CH3_3_Public_SpinActor_h_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);

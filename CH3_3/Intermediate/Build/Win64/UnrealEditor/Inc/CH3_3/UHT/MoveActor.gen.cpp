@@ -44,6 +44,10 @@ struct Z_Construct_UClass_AMoveActor_Statics
 		{ "EditInline", "true" },
 		{ "ModuleRelativePath", "Public/MoveActor.h" },
 	};
+	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_MoveDirection_MetaData[] = {
+		{ "Category", "MoveActor|Components" },
+		{ "ModuleRelativePath", "Public/MoveActor.h" },
+	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_MoveSpeed_MetaData[] = {
 		{ "Category", "MoveActor|Components" },
 		{ "ModuleRelativePath", "Public/MoveActor.h" },
@@ -55,6 +59,7 @@ struct Z_Construct_UClass_AMoveActor_Statics
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_SceneRoot;
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_StaticMeshComp;
+	static const UECodeGen_Private::FFloatPropertyParams NewProp_MoveDirection;
 	static const UECodeGen_Private::FFloatPropertyParams NewProp_MoveSpeed;
 	static const UECodeGen_Private::FFloatPropertyParams NewProp_MaxRange;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
@@ -66,11 +71,13 @@ struct Z_Construct_UClass_AMoveActor_Statics
 };
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AMoveActor_Statics::NewProp_SceneRoot = { "SceneRoot", nullptr, (EPropertyFlags)0x00200800000a001d, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(AMoveActor, SceneRoot), Z_Construct_UClass_USceneComponent_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_SceneRoot_MetaData), NewProp_SceneRoot_MetaData) };
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AMoveActor_Statics::NewProp_StaticMeshComp = { "StaticMeshComp", nullptr, (EPropertyFlags)0x002008000008000d, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(AMoveActor, StaticMeshComp), Z_Construct_UClass_UStaticMeshComponent_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_StaticMeshComp_MetaData), NewProp_StaticMeshComp_MetaData) };
-const UECodeGen_Private::FFloatPropertyParams Z_Construct_UClass_AMoveActor_Statics::NewProp_MoveSpeed = { "MoveSpeed", nullptr, (EPropertyFlags)0x0020080000010015, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(AMoveActor, MoveSpeed), METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_MoveSpeed_MetaData), NewProp_MoveSpeed_MetaData) };
-const UECodeGen_Private::FFloatPropertyParams Z_Construct_UClass_AMoveActor_Statics::NewProp_MaxRange = { "MaxRange", nullptr, (EPropertyFlags)0x0020080000010015, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(AMoveActor, MaxRange), METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_MaxRange_MetaData), NewProp_MaxRange_MetaData) };
+const UECodeGen_Private::FFloatPropertyParams Z_Construct_UClass_AMoveActor_Statics::NewProp_MoveDirection = { "MoveDirection", nullptr, (EPropertyFlags)0x0020080000000005, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(AMoveActor, MoveDirection), METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_MoveDirection_MetaData), NewProp_MoveDirection_MetaData) };
+const UECodeGen_Private::FFloatPropertyParams Z_Construct_UClass_AMoveActor_Statics::NewProp_MoveSpeed = { "MoveSpeed", nullptr, (EPropertyFlags)0x0020080000000005, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(AMoveActor, MoveSpeed), METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_MoveSpeed_MetaData), NewProp_MoveSpeed_MetaData) };
+const UECodeGen_Private::FFloatPropertyParams Z_Construct_UClass_AMoveActor_Statics::NewProp_MaxRange = { "MaxRange", nullptr, (EPropertyFlags)0x0020080000000005, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(AMoveActor, MaxRange), METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_MaxRange_MetaData), NewProp_MaxRange_MetaData) };
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_AMoveActor_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AMoveActor_Statics::NewProp_SceneRoot,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AMoveActor_Statics::NewProp_StaticMeshComp,
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AMoveActor_Statics::NewProp_MoveDirection,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AMoveActor_Statics::NewProp_MoveSpeed,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AMoveActor_Statics::NewProp_MaxRange,
 };
@@ -115,10 +122,10 @@ AMoveActor::~AMoveActor() {}
 struct Z_CompiledInDeferFile_FID_Unreal_Project_CH3_3_CH3_3_Source_CH3_3_Public_MoveActor_h_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_AMoveActor, AMoveActor::StaticClass, TEXT("AMoveActor"), &Z_Registration_Info_UClass_AMoveActor, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AMoveActor), 3554785609U) },
+		{ Z_Construct_UClass_AMoveActor, AMoveActor::StaticClass, TEXT("AMoveActor"), &Z_Registration_Info_UClass_AMoveActor, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AMoveActor), 1797116723U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Unreal_Project_CH3_3_CH3_3_Source_CH3_3_Public_MoveActor_h_2352058701(TEXT("/Script/CH3_3"),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Unreal_Project_CH3_3_CH3_3_Source_CH3_3_Public_MoveActor_h_364058143(TEXT("/Script/CH3_3"),
 	Z_CompiledInDeferFile_FID_Unreal_Project_CH3_3_CH3_3_Source_CH3_3_Public_MoveActor_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Unreal_Project_CH3_3_CH3_3_Source_CH3_3_Public_MoveActor_h_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);

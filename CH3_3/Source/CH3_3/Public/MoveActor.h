@@ -21,11 +21,12 @@ protected:
 	
 	
 	FVector StartLocation;
-
+	
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "MoveActor|Components")
 	float MoveDirection;
-	UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, Category = "MoveActor|Components")
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "MoveActor|Components")
 	float MoveSpeed;
-	UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, Category = "MoveActor|Components")
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "MoveActor|Components")
 	float MaxRange;
 
 	virtual void BeginPlay() override;
