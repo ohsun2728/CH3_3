@@ -11,6 +11,7 @@
     <None Include="..\..\Source\CH3_3Editor.Target.cs">
       <Filter>Source</Filter>
     </None>
+    <None Include="..\..\.vsconfig" />
     <Filter Include="Config">
       <UniqueIdentifier>{FA535FFB-25E1-3D20-B416-52F9BE21E06E}</UniqueIdentifier>
     </Filter>
@@ -37,6 +38,24 @@
     </ClCompile>
     <ClCompile Include="..\..\Source\CH3_3\CH3_3.h">
       <Filter>Source\CH3_3</Filter>
+    </ClCompile>
+    <Filter Include="Source\CH3_3\Private">
+      <UniqueIdentifier>{61F09F0C-C59A-3006-BFA7-0B7A51591A2F}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\CH3_3\Private\MoveActor.cpp">
+      <Filter>Source\CH3_3\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\CH3_3\Private\SpinActor.cpp">
+      <Filter>Source\CH3_3\Private</Filter>
+    </ClCompile>
+    <Filter Include="Source\CH3_3\Public">
+      <UniqueIdentifier>{20AFA05C-015A-3B1A-BE58-DB67A2A74FF1}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\CH3_3\Public\MoveActor.h">
+      <Filter>Source\CH3_3\Public</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\CH3_3\Public\SpinActor.h">
+      <Filter>Source\CH3_3\Public</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
