@@ -13,10 +13,21 @@ public:
 	AMoveActor();
 
 protected:
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category="MoveActor|Components")
 	USceneComponent* SceneRoot;
 
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category="MoveActor|Components")
 	UStaticMeshComponent* StaticMeshComp;
 	
+	
+	FVector StartLocation;
+
+	float MoveDirection;
+	UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, Category = "MoveActor|Components")
+	float MoveSpeed;
+	UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, Category = "MoveActor|Components")
+	float MaxRange;
+
 	virtual void BeginPlay() override;
 
 public:	

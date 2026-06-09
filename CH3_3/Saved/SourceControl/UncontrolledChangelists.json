@@ -6,7 +6,8 @@
 			"description": "Default Uncontrolled Changelist",
 			"files": [
 				"C:/Unreal Project/CH3_3/CH3_3/Content/Map/CH3_3.umap",
-				"C:/Unreal Project/CH3_3/CH3_3/Content/Blueprint/MySpinActor.uasset"
+				"C:/Unreal Project/CH3_3/CH3_3/Content/Blueprint/MySpinActor.uasset",
+				"C:/Unreal Project/CH3_3/CH3_3/Content/Blueprint/MyMoveActor.uasset"
 			]
 		}
 	]
